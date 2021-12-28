@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/lblAccountTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cuenta"
+            android:fontFamily="@font/gilroy_extra_bold"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/lblAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí puedes ver todos los datos de tu cuenta"
+            android:fontFamily="@font/avenir_text_regular"
+            android:textColor="@color/gray_500"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginVertical="20dp">
+
+            <TableRow
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID:"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:textSize="20dp"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/lblID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_text_regular"
+                    android:textSize="15dp"
+                    android:padding="10dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre:"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:textSize="20dp"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/lblName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_text_regular"
+                    android:textSize="15dp"
+                    android:padding="10dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correo electrónico:"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:textSize="20dp"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/lblEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_text_regular"
+                    android:textSize="15dp"
+                    android:padding="10dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Género:"
+                    android:fontFamily="@font/gilroy_extra_bold"
+                    android:textSize="20dp"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/lblGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_text_regular"
+                    android:textSize="15dp"
+                    android:padding="10dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:fontFamily="@font/gilroy_extra_bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
